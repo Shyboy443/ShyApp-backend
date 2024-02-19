@@ -1,13 +1,10 @@
 {
-  "homepage": "https://Shyboy443.github.io/ShyApp-backend",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "backend": "node server.js"
   },
   "keywords": [],

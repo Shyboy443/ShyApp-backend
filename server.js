@@ -22,7 +22,7 @@ app.use(cookieParser())
 app.use(express.urlencoded({extended:false}))
 app.use(bodyParser.json());
 app.use(cors({
-    origin: ["http://localhost:3000", "http://shy-app.vercel.app","https://Shyboy443.github.io/ShyApp-frontend"],
+    origin: ["http://localhost:3000","http://shy-app-api.onrender.com"],
     credentials: true,
 }));
 app.use("/uploads",express.static(path.join(__dirname,"uploads")));
