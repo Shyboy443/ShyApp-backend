@@ -5,7 +5,6 @@ const bcrypt = require("bcryptjs")
 const Token = require("../models/tokenModel")
 const crypto = require("crypto");
 const sendEmail = require("../utills/sendEmail");
-const verifytiwliotoken = require("../utills/sendSms");
 //  Generate Token\
 
 const generateToken = (id) => {
