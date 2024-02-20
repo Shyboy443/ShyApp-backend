@@ -13,6 +13,9 @@ const path = require("path")
 const app = express()
 const PORT = process.env.PORT || 2000;
 
+const FRONTEND_URL = process.env.FRONTEND_URL;
+
+
 
 
 //Middlewares
@@ -22,7 +25,7 @@ app.use(cookieParser())
 app.use(express.urlencoded({extended:false}))
 app.use(bodyParser.json());
 app.use(cors({
-    origin: ["http://localhost:3000","https://shy-app.onrender.com"],
+    origin: ["http://localhost:3000",`${FRONTEND_URL}`],
     credentials: true,
 }));
 app.use("/uploads",express.static(path.join(__dirname,"uploads")));
